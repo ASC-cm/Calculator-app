@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/calculator.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React Calculator</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="Calcium.js"></script>
+</head>
+<body onload="initializeCalculator()">
+    <div class="Calculator">
+        <input id="input" readonly placeholder="Calculator">
+        <div class="number">
+            <div class="Asc">
+                <button onclick="button('7')">7</button>
+                <button onclick="button('8')">8</button>
+                <button onclick="button('9')">9</button>
+                <button onclick="button('/')" class="buttonP">/</button>
+            </div>
+            <div class="Asc">
+                <button onclick="button('4')">4</button>
+                <button onclick="button('5')">5</button>
+                <button onclick="button('6')">6</button>
+                <button onclick="button('*')" class="buttonP">*</button>
+            </div>
+            <div class="Asc">
+                <button onclick="button('1')">1</button>
+                <button onclick="button('2')">2</button>
+                <button onclick="button('3')">3</button>
+                <button onclick="button('-')" class="buttonP">-</button>
+            </div>
+            <div class="Asc">
+                <button onclick="inputClear()" class="buttonCE">CE</button>
+                <button onclick="button('0')">0</button>
+                <button onclick="button('.')">.</button>
+                <button onclick="calculate()" class="buttonE">=</button>
+            </div>
+            <div class="x5">
+                <p> <strong><span style="color:red;">POWERED By</span></strong> Simon Ani</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
 </html>
